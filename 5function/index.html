@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="My-Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1> <span class="animate"> Function introduction </span> </h1>
+
+    <p>
+        <span id="content1"></span>
+        <span id="content2"></span>
+        <span id="content3"></span>        
+        <span id="content4"></span>     
+    </p>
+
+    <script>
+        function testfun(a, b) {
+            return b + a;
+        }
+
+        var fun = function(x,y) {return x*y};
+        
+        function funs(a,v,b){
+            return arguments.length;
+        }
+
+
+        document.getElementById("content1").innerHTML=testfun("yolo","yo ") ;
+        document.getElementById("content2").innerHTML=testfun(20,30) ;
+        document.getElementById("content3").innerHTML= fun(20,10);
+        document.getElementById("content4").innerHTML= funs(20, 10, 90);
+
+
+    </script>
+
+</body>
+</html>

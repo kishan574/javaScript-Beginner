@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="My-Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1> <span class="animate"> Data type </span> </h1> 
+    <p>
+       <h5>number <span class="animate" id="content1">  </span></h5>  
+       <h5>string <span class="animate" id="content2">  </span></h5> 
+       <h5>array <span class="animate" id="content3">  </span></h5> 
+       <h5>object <span class="animate" id="content4">  </span></h5> 
+       <h5>bool <span class="animate" id="content5">  </span></h5>  
+       <h5>type <span class="animate" id="content6">  </span></h5>  
+        
+    </p>
+    <script>
+        var num = 10;
+        var name = 'mike';
+        var cArray = ["BMW" , "audi"];
+        var obj = {make:"BMW", mode:"gt360" };
+        var t = true;
+         document.getElementById("content1").innerHTML=num;
+         document.getElementById("content2").innerHTML=name;
+         document.getElementById("content3").innerHTML=cArray[0]+cArray[1];
+         document.getElementById("content5").innerHTML=t;
+         document.getElementById("content4").innerHTML=obj.make+" "+obj.mode;
+         document.getElementById("content6").innerHTML= typeof obj;
+
+    </script>
+</body>
+</html>
